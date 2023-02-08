@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="stop_auto_lot_res_config_inherit" model="ir.ui.view">
+        <field name="name">stop.lot.res.config.settings.inherite</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="stock.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@groups='stock.group_stock_manager']" position="inside">
+                <h2>Stop auto lot configuration</h2>
+                <div class="row mt16 o_settings_container">
+                    <div class="col-xs-12 col-md-6 o_setting_box">
+                        <div class="o_setting_left_pane">
+                            <field name="auto_lot_stop"/>
+                        </div>    
+                        <div class="o_setting_right_pane">
+                            <label for='auto_lot_stop'/>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
